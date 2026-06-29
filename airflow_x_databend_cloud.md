@@ -12,6 +12,8 @@
 - 一个能直接照着跑通的 DAG，以及配套的启动脚本
 - 从启动服务、配置连接、到看见数据落表的完整操作过程
 
+> 本文用到的全部代码——完整的启动脚本、DAG、样例数据和依赖清单——都已经放在 GitHub 上：[**databendcloud/airflow-demo**](https://github.com/databendcloud/airflow-demo)。下文会贴出关键片段并逐段讲解，想直接上手或看完整文件，clone 这个仓库即可。
+
 ---
 
 ## 两个组件
@@ -342,3 +344,6 @@ SELECT * FROM airflow_demo;
 - 中间的 **S3** 既是导入的高速通道，也是原始数据的暂存层。
 
 三者配合，得到一条**单一调度源、依赖明确、重跑安全**的数据进仓流水线。从这个骨架出发，换数据源、改调度周期、接更多下游处理，都只是顺势扩展的事。
+
+详细完整的启动脚本和 DAG 代码，可参考 GitHub 仓库 [**databendcloud/airflow-demo**](https://github.com/databendcloud/airflow-demo)，clone 下来按 README 配好凭证即可跑通。
+
