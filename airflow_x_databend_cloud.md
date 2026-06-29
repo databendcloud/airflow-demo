@@ -1,4 +1,4 @@
-# Airflow × Databend Cloud：用 Airflow 把本地 CSV/NDJSON 自动灌进数据仓库
+# 从本地文件到云端数仓：用 Airflow 编排 Databend Cloud 数据入仓流水线
 
 ## 前言
 
